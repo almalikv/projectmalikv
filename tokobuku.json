@@ -1,0 +1,18 @@
+{
+    "builds": [
+        {
+            "src": "tokomalik/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "route": [
+        {
+            "src" : "/(.*)",
+            "use" : "tokomalik/wsgi.py"
+        }
+    ],
+    "DISABLE_COLLECTSTATIC": {
+        "description": "Don't run python manage.py collectstatic --noinput on deploy",
+        "value" : "1"
+    }
+}
