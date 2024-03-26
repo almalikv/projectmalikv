@@ -1,0 +1,6 @@
+Django==4.1.7
+gunicorn==20.1.0
+pillow
+django-import-export
+psycopg2
+whitenoise
